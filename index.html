@@ -55,7 +55,7 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="text-2xl md:text-3xl font-extrabold">P-Ticket</a>
+          <a href="" class="text-2xl md:text-3xl font-extrabold">P-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -335,10 +335,10 @@
 
           <!-- Second Box for select your ticket -->
           <div
-            class="mt-6 rounded-2xl bg-white font-inter gap-8 p-4 md:p-8 flex flex-col lg:flex-row"
+            class="mt-6 rounded-2xl bg-white border-[3px] border-dashed border-[#0307124d] font-inter gap-8 p-4 md:p-8 flex flex-col lg:flex-row"
           >
             <!-- select ticket left side -->
-            <div class="w-full lg:w-[65%]">
+            <div class="w-full lg:w-[52%] xl:w-[65%]">
               <h2
                 class="font-raleway text-[#030712] text-2xl font-semibold mb-3"
               >
@@ -708,13 +708,126 @@
             </div>
             <!-- select ticket right side -->
             <div
-              class="w-full lg:w-[32%] border-l border-dashed pl-3 border-[#03071233]"
+              class="w-full lg:w-[48%] xl:w-[35%] border-l border-dashed pl-4 border-[#03071233]"
             >
               <h2
-                class="font-raleway text-[#030712] text-2xl font-semibold pb-3 border-b border-dashed border-[#03071233]"
+                class="font-raleway text-[#030712] text-2xl font-semibold mb-4 pb-3 border-b border-dashed border-[#03071233]"
               >
                 Select Your Seat
               </h2>
+              <!-- Total billing box -->
+              <div class="bg-[#f7f8f8] rounded-2xl p-3 md:p-8">
+                <!-- Table heading -->
+                <div
+                  class="flex justify-between border-b border-dashed border-[#03071233] pb-4"
+                >
+                  <div class="flex justify-center items-center gap-1">
+                    <h4 class="text-[#030712] font-medium">Seat</h4>
+                    <span
+                      class="bg-[#1dd100] text-white text-xs px-2 rounded-full h-fit"
+                      >0</span
+                    >
+                  </div>
+                  <h4 class="text-[#030712] font-medium">Class</h4>
+                  <h4 class="text-[#030712] font-medium">Price</h4>
+                </div>
+                <!-- Table Rows -->
+
+                <div class="mt-4 space-y-3">
+                  <!-- Table Single Row  -->
+                  <div class="flex justify-between">
+                    <h4 class="text-[#03071299]">C2</h4>
+                    <h4 class="text-[#03071299]">Economy</h4>
+                    <h4 class="text-[#03071299]">550</h4>
+                  </div>
+                  <!-- Table Single Row  -->
+                  <div class="flex justify-between">
+                    <h4 class="text-[#03071299]">C2</h4>
+                    <h4 class="text-[#03071299]">Economy</h4>
+                    <h4 class="text-[#03071299]">550</h4>
+                  </div>
+                </div>
+                <!-- Total Price -->
+                <div
+                  class="mt-4 border-t border-[#03071233] pt-3 flex justify-between"
+                >
+                  <h3 class="text-[#030712] font-medium">Total Price</h3>
+                  <h3 class="text-[#030712] font-medium">BDT 1100</h3>
+                </div>
+                <!-- Have any coupon -->
+
+                <div class="flex items-center relative mt-3">
+                  <input
+                    type="text"
+                    placeholder="Type here"
+                    class="input input-bordered w-full py-5 pr-[29%] md:pr-[24%] lg:pr-[43%]"
+                  />
+                  <button
+                    class="btn min-h-0 h-auto py-3 rounded-2xl absolute right-[4%] top-[9%] text-white px-3 bg-[#1dd100] cursor-pointer border-none"
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
+              <!-- Form  -->
+              <form class="space-y-6 mt-6">
+                <label class="form-control w-full">
+                  <div class="label">
+                    <span class="label-text text-[#030712] font-semibold"
+                      >Passenger Name*</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="input input-bordered w-full"
+                  />
+                </label>
+                <label class="form-control w-full">
+                  <div class="label">
+                    <span class="label-text text-[#030712] font-semibold"
+                      >Passenger Name*</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="input input-bordered w-full"
+                  />
+                </label>
+                <label class="form-control w-full">
+                  <div class="label">
+                    <span class="label-text text-[#030712] font-semibold"
+                      >Passenger Name*</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="input input-bordered w-full"
+                  />
+                </label>
+
+                <input
+                  id="submit-btn"
+                  class="btn font-raleway font-extrabold rounded-2xl text-white text-xl btn-active btn-success bg-[#1dd100] w-full border-none"
+                  type="submit"
+                  value="Next"
+                />
+                <!-- Terms and condition  -->
+                <div class="flex items-center justify-center gap-3">
+                  <p>
+                    <a href="" class="underline text-[#03071299]"
+                      >Terms and Conditions</a
+                    >
+                  </p>
+                  <p>
+                    <a href="" class="underline text-[#03071299]"
+                      >Cancelling Policy</a
+                    >
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -723,8 +836,20 @@
     <footer>
       <br />
       <br />
+
+      <!-- <div class="w-[20%] mx-auto">
+        <label class="input input-bordered flex items-center gap-5">
+          <input type="text" placeholder="Search" />
+          <button
+            class="rounded-2xl px-3 bg-[#1dd100] py-2 cursor-pointer border-none"
+          >
+            Optional
+          </button>
+        </label>
+      </div> -->
       <br />
       <br />
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
