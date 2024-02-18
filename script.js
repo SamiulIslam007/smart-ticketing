@@ -35,6 +35,11 @@ for (seat of seats) {
 
       // Calculate and showing the grand total with a function
       granTotalCalculate();
+
+      //   Click event for next button to enable it.
+      event.target.classList.add("seat-clicked");
+      singleSeat = event.target;
+      nextBtnEnable();
     } else if (selectedSeats.includes(event.target)) {
       alert("you have already selected the seat. ");
     } else {
@@ -49,6 +54,19 @@ for (seat of seats) {
       couponApplyBtn.disabled = false;
     }
   });
+}
+
+// Next button becoming enable
+let singleSeat;
+// Selecting phone input field
+getAElementById("phone-input-field").addEventListener("input", nextBtnEnable);
+
+function nextBtnEnable() {
+  const phoneNumber = getAElementById("phone-input-field").value;
+
+  if (phoneNumber && singleSeat.classList.contains("seat-clicked")) {
+    getAElementById("submit-btn").disabled = false;
+  }
 }
 
 // Next button modal
