@@ -68,7 +68,6 @@ function totalPriceCalculate() {
   totalPriceArr[1] = totalPrice;
 
   return totalPriceArr;
-  getAElementById("total-price-amount").innerText = totalPriceArr.join(" ");
 }
 
 //This function will return the grand total of the price with discount or without discount
@@ -76,10 +75,44 @@ let grandTotalPrice = 0;
 function granTotalCalculate() {
   grandTotalPrice = grandTotalPrice + 550;
 
-  //   The element has some text BTD. SO, I have make that inner text to an array and add the total price to the 1st index of the array.
-  const totalPriceArr =
-    getAElementById("grand-total-amount").innerText.split(" ");
-  totalPriceArr[1] = grandTotalPrice;
+  getAElementById("grand-total-price").innerText = grandTotalPrice;
+}
 
-  return totalPriceArr;
+// This function will calculate the discount
+function applyCoupon() {
+  // Getting the coupon code form the input field
+  const coupon = getAElementById("coupon-input-field").value;
+
+  //   discount element
+  const discountDetails = getAElementById("discount-details");
+
+  if (coupon === "NEW15") {
+    // Calculating 15% discount
+    const discount = grandTotalPrice * 0.15;
+
+    // showing the discount price
+    discountDetails.classList.remove("hidden");
+    getAElementById("discount-amount").innerText = discount;
+
+    // updating the grand total
+    getAElementById("grand-total-price").innerText = grandTotalPrice - discount;
+
+    // Deleting the coupon area: input field and button
+    getAElementById("coupon-area").classList.add("hidden");
+  } else if (coupon === "Couple 20") {
+    // Calculating 20% discount
+    const discount = grandTotalPrice * 0.2;
+
+    // Showing the discount price
+    discountDetails.classList.remove("hidden");
+    getAElementById("discount-amount").innerText = discount;
+
+    // updating the grand total
+    getAElementById("grand-total-price").innerText = grandTotalPrice - discount;
+
+    // Deleting the coupon area: input field and button
+    getAElementById("coupon-area").classList.add("hidden");
+  } else {
+    alert("Your coupon is not valid !!");
+  }
 }

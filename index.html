@@ -776,27 +776,45 @@
                 </div>
                 <!-- Have any coupon -->
 
-                <div class="flex items-center relative mt-3">
+                <div id="coupon-area" class="flex items-center relative mt-3">
                   <input
                     type="text"
-                    placeholder="Type here"
+                    id="coupon-input-field"
+                    placeholder="Have any coupon"
                     class="input input-bordered w-full py-5 pr-[29%] md:pr-[24%] lg:pr-[43%]"
+                    disabled
                   />
                   <button
+                    onclick="applyCoupon()"
+                    id="coupon-apply-btn"
                     class="btn min-h-0 h-auto py-3 rounded-2xl absolute right-[4%] top-[9%] text-white px-3 bg-[#1dd100] cursor-pointer border-none"
+                    disabled
                   >
                     Apply
                   </button>
                 </div>
-                <!-- Grand Total section -->
-                <div class="mt-4 pt-3 flex justify-between">
-                  <h3 class="text-[#030712] font-medium">Grand Total</h3>
-                  <h3
-                    id="grand-total-amount"
-                    class="text-[#030712] font-medium"
+
+                <div class="mt-4 space-y-1">
+                  <!-- Discount -->
+                  <div
+                    id="discount-details"
+                    class="hidden mt-1 pt-3 flex justify-between"
                   >
-                    BDT 0
-                  </h3>
+                    <h3 class="text-[#030712] font-medium">Discount</h3>
+                    <h3 class="text-[#030712] font-medium">
+                      BDT <span id="discount-amount" class="ml-1">0</span>
+                    </h3>
+                  </div>
+                  <!-- Grand Total section -->
+                  <div class="pt-3 flex justify-between">
+                    <h3 class="text-[#030712] font-medium">Grand Total</h3>
+                    <h3
+                      id="grand-total-amount"
+                      class="text-[#030712] font-medium"
+                    >
+                      BDT <span id="grand-total-price" class="ml-1">0</span>
+                    </h3>
+                  </div>
                 </div>
               </div>
               <!-- Form  -->
@@ -809,31 +827,31 @@
                   </div>
                   <input
                     type="text"
-                    placeholder="Enter Your Name"
+                    placeholder="Enter your name"
                     class="input input-bordered w-full"
                   />
                 </label>
                 <label class="form-control w-full">
                   <div class="label">
                     <span class="label-text text-[#030712] font-semibold"
-                      >Passenger Name*</span
+                      >Phone Number*</span
                     >
                   </div>
                   <input
                     type="text"
-                    placeholder="Enter Your Name"
+                    placeholder="Enter Your phone number"
                     class="input input-bordered w-full"
                   />
                 </label>
                 <label class="form-control w-full">
                   <div class="label">
                     <span class="label-text text-[#030712] font-semibold"
-                      >Passenger Name*</span
+                      >Email ID</span
                     >
                   </div>
                   <input
                     type="text"
-                    placeholder="Enter Your Name"
+                    placeholder="Enter Your email id"
                     class="input input-bordered w-full"
                   />
                 </label>

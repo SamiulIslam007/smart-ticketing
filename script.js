@@ -34,15 +34,19 @@ for (seat of seats) {
         totalPriceCalculate().join(" ");
 
       // Calculate and showing the grand total with a function
-      getAElementById("grand-total-amount").innerText =
-        granTotalCalculate().join(" ");
+      granTotalCalculate();
     } else if (selectedSeats.includes(event.target)) {
       alert("you have already selected the seat. ");
-      //   event.target.classList.add("bg-[#f7f8f8]");
-      //   event.target.classList.remove("bg-[#1dd100]", "text-white");
-      //   selectedSeats = selectedSeats.filter((item) => item !== event.target);
     } else {
       alert("You can not buy more than 4 tickets .");
+    }
+
+    // Coupon input and button enable when 4 items is selected.
+    const couponInput = getAElementById("coupon-input-field");
+    const couponApplyBtn = getAElementById("coupon-apply-btn");
+    if (selectedSeats.length === 4) {
+      couponInput.disabled = false;
+      couponApplyBtn.disabled = false;
     }
   });
 }
