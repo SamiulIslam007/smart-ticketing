@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -110,11 +110,12 @@
             app. The <br />
             integrated testing features allow for a streamlined .
           </p>
-          <button
+          <a
+            href="#buy-ticket"
             class="btn bg-[#1dd100] border-none px-5 py-2 font-bold text-xl"
           >
             Buy Tickets
-          </button>
+          </a>
         </div>
       </div>
       <!-- Banner top -->
@@ -241,6 +242,7 @@
       </section>
       <!-- Ticket Buying section -->
       <section
+        id="buy-ticket"
         class="bg-[#f7f8f8] py-5 md:py-16 lg:py-28 px-4 md:px-24 lg:px-32 border-t border-[#1dd100] rounded-t-3xl mt-16 md:mt-28"
       >
         <!-- Section title & description  -->
@@ -290,7 +292,7 @@
                       alt="seat-left-icon"
                     />
                   </div>
-                  <span>40</span>
+                  <span id="seat-left-count">40</span>
                   <span class="ml-1">Seats left</span>
                 </div>
               </div>
@@ -390,12 +392,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         A1
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         A2
                       </div>
@@ -404,12 +406,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         A3
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         A4
                       </div>
@@ -424,12 +426,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         B1
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         B2
                       </div>
@@ -438,12 +440,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         B3
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         B4
                       </div>
@@ -458,12 +460,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         C1
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         C2
                       </div>
@@ -472,12 +474,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         C3
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         C4
                       </div>
@@ -492,12 +494,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         D1
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         D2
                       </div>
@@ -506,12 +508,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         D3
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         D4
                       </div>
@@ -526,12 +528,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         E1
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         E2
                       </div>
@@ -540,12 +542,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         E3
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         E4
                       </div>
@@ -560,12 +562,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         F1
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         F2
                       </div>
@@ -574,12 +576,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         F3
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         F4
                       </div>
@@ -594,12 +596,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         G1
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         G2
                       </div>
@@ -608,12 +610,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         G3
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         G4
                       </div>
@@ -628,12 +630,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         H1
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         H2
                       </div>
@@ -642,12 +644,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         H3
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         H4
                       </div>
@@ -662,12 +664,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         I1
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         I2
                       </div>
@@ -676,12 +678,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         I3
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         I4
                       </div>
@@ -696,12 +698,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         J1
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         J2
                       </div>
@@ -710,12 +712,12 @@
                       class="w-[40%] flex items-center justify-between gap-2"
                     >
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         J3
                       </div>
                       <div
-                        class="w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
+                        class="seat w-[48%] bg-[#f7f8f8] py-3 text-center lg:py-4 rounded-xl cursor-pointer"
                       >
                         J4
                       </div>
@@ -742,6 +744,7 @@
                   <div class="flex justify-center items-center gap-1">
                     <h4 class="text-[#030712] font-medium">Seat</h4>
                     <span
+                      id="selected-seat-count"
                       class="bg-[#1dd100] text-white text-xs px-2 rounded-full h-fit"
                       >0</span
                     >
@@ -751,26 +754,25 @@
                 </div>
                 <!-- Table Rows -->
 
-                <div class="mt-4 space-y-3">
+                <div id="seat-list-container" class="mt-4 space-y-3">
                   <!-- Table Single Row  -->
-                  <div class="flex justify-between">
+                  <!-- <div class="flex justify-between">
                     <h4 class="text-[#03071299]">C2</h4>
                     <h4 class="text-[#03071299]">Economy</h4>
                     <h4 class="text-[#03071299]">550</h4>
-                  </div>
-                  <!-- Table Single Row  -->
-                  <div class="flex justify-between">
-                    <h4 class="text-[#03071299]">C2</h4>
-                    <h4 class="text-[#03071299]">Economy</h4>
-                    <h4 class="text-[#03071299]">550</h4>
-                  </div>
+                  </div> -->
                 </div>
                 <!-- Total Price -->
                 <div
                   class="mt-4 border-t border-[#03071233] pt-3 flex justify-between"
                 >
                   <h3 class="text-[#030712] font-medium">Total Price</h3>
-                  <h3 class="text-[#030712] font-medium">BDT 1100</h3>
+                  <h3
+                    id="total-price-amount"
+                    class="text-[#030712] font-medium"
+                  >
+                    BDT 0
+                  </h3>
                 </div>
                 <!-- Have any coupon -->
 
@@ -785,6 +787,16 @@
                   >
                     Apply
                   </button>
+                </div>
+                <!-- Grand Total section -->
+                <div class="mt-4 pt-3 flex justify-between">
+                  <h3 class="text-[#030712] font-medium">Grand Total</h3>
+                  <h3
+                    id="grand-total-amount"
+                    class="text-[#030712] font-medium"
+                  >
+                    BDT 0
+                  </h3>
                 </div>
               </div>
               <!-- Form  -->
@@ -906,6 +918,7 @@
         </div>
       </footer>
     </footer>
+    <script src="./utility.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
