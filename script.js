@@ -66,6 +66,8 @@ function nextBtnEnable() {
 
   if (phoneNumber && singleSeat.classList.contains("seat-clicked")) {
     getAElementById("submit-btn").disabled = false;
+  } else {
+    getAElementById("submit-btn").disabled = true;
   }
 }
 
