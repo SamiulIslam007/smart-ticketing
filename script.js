@@ -50,3 +50,19 @@ for (seat of seats) {
     }
   });
 }
+
+// Next button modal
+
+function openModal() {
+  //   getting the phone number
+  const phoneNumber = getAElementById("phone-input-field").value;
+
+  //   Checking the condition if there is a phone number and at least one seat selected
+  if (phoneNumber && selectedSeats.length >= 1) {
+    getAElementById("my_modal_1").showModal();
+  } else {
+    alert(
+      "Please select at least one seat and add your phone number to proceed."
+    );
+  }
+}
